@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Yatra+One&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Maratha Empire Colors */
+  --color-bhagwa-light: #FFA64D;
+  --color-bhagwa: #FF9933; /* Deep Saffron */
+  --color-bhagwa-dark: #E68A2E;
+
+  --color-basalt-light: #3A4449;
+  --color-basalt: #2C3539; /* Fort Stone */
+  --color-basalt-dark: #1E2326;
+
+  --color-regal: #D4AF37; /* Gold accents */
+  --color-parchment: #F4F1EA; /* Historical background */
+
+  /* Custom Fonts */
+  --font-heading: "Yatra One", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-parchment);
+    color: var(--color-basalt);
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-basalt-dark);
+  }
+}
