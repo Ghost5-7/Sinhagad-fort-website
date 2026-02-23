@@ -2,28 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const AboutProject = () => {
-  const innovations = [
-    {
-      title: "Full-Stack AI Integration",
-      icon: "🧠",
-      desc: "Implemented a secure serverless backend using Vercel Functions to route queries to the Gemini API. Built a custom defensive sanitizer to strictly format chat history and avoid state-mismatch crashes."
-    },
-    {
-      title: "Interactive Topography",
-      icon: "🗺️",
-      desc: "Embedded specialized satellite iframes with custom CSS-injected filters (grayscale and contrast adjustments) to match the historical aesthetic while providing interactive geographical context."
-    },
-    {
-      title: "Cinematic Framer Motion UI",
-      icon: "✨",
-      desc: "Engineered a native-app feel using Framer Motion for scroll-linked animations, spatial layout transitions, and staggered DOM rendering based on viewport intersections."
-    },
-    {
-      title: "Responsive Component Architecture",
-      icon: "⚛️",
-      desc: "Built a fully modular React architecture styled with Tailwind CSS v4, ensuring absolute responsiveness across mobile, tablet, and ultra-wide desktop displays."
-    }
-  ];
 
   return (
     <section className="py-24 px-6 bg-parchment min-h-screen text-basalt">
