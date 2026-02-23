@@ -4,15 +4,13 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <nav className="bg-basalt-dark text-parchment py-4 px-6 sticky top-0 z-50 shadow-md">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
         
-        {/* Logo/Site Title */}
-        <Link to="/" className="text-2xl font-heading text-bhagwa tracking-wide hover:text-parchment transition-colors">
+        <Link to="/" className="text-2xl font-heading text-bhagwa tracking-wide hover:text-parchment transition-colors text-center md:text-left">
           Sinhagad Heritage
         </Link>
 
-        {/* Navigation Links */}
-        <div className="flex gap-6 font-sans font-medium uppercase text-sm tracking-wider">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6 font-sans font-medium uppercase text-xs md:text-sm tracking-wider">
           <Link to="/" className="hover:text-bhagwa transition-colors duration-300">
             Home
           </Link>
@@ -21,6 +19,9 @@ const Navbar = () => {
           </Link>
           <Link to="/vaidya" className="hover:text-bhagwa text-regal transition-colors duration-300">
             Virtual Vaidya
+          </Link>
+          <Link to="/about" className="hover:text-bhagwa transition-colors duration-300">
+            Project Specs
           </Link>
         </div>
 

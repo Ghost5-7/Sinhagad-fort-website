@@ -10,7 +10,8 @@ import Architecture from './components/Architecture';
 import FloraFauna from './components/FloraFauna';
 import Gallery from './components/Gallery';
 import VirtualVaidya from './components/VirtualVaidya';
-import PageTransition from './components/PageTransition'; // <-- The new wrapper
+import AboutProject from './components/AboutProject';
+import PageTransition from './components/PageTransition';
 
 // The Homepage sections combined
 const Home = () => (
@@ -27,15 +28,12 @@ const AnimatedRoutes = () => {
   const location = useLocation();
 
   return (
-    // mode="wait" tells the old page to completely slide away BEFORE the new one slides in
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        
-        {/* Wrap every route in our new PageTransition component */}
         <Route path="/" element={<PageTransition><Home /></PageTransition>} />
         <Route path="/gallery" element={<PageTransition><Gallery /></PageTransition>} />
         <Route path="/vaidya" element={<PageTransition><VirtualVaidya /></PageTransition>} />
-        
+        <Route path="/about" element={<PageTransition><AboutProject /></PageTransition>} />
       </Routes>
     </AnimatePresence>
   );
@@ -44,10 +42,12 @@ const AnimatedRoutes = () => {
 function App() {
   return (
     <Router>
-      <main className="min-h-screen bg-parchment text-basalt font-sans overflow-x-hidden">
+      <main className="min-h-screen bg-parchment text-basalt font-sans overflow-x-hidden flex flex-col">
         <Navbar />
         
-        <AnimatedRoutes />
+        <div className="flex-grow">
+          <AnimatedRoutes />
+        </div>
         
         <footer className="bg-basalt-dark text-parchment py-8 text-center font-sans border-t border-basalt-light mt-auto">
           <p className="opacity-70">© {new Date().getFullYear()} Sinhagad Fort Heritage. Built with React & Tailwind.</p>
