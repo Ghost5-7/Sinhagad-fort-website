@@ -43,26 +43,7 @@ const AboutProject = () => {
           </p>
         </motion.div>
 
-        {/* --- Section 1: Technical Innovations --- */}
-        <div className="mb-24">
-          <h2 className="text-3xl font-heading text-bhagwa-dark mb-10 text-center">Technical Innovations</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {innovations.map((item, index) => (
-              <motion.div 
-                key={index}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                className="bg-white p-8 border-l-4 border-bhagwa shadow-lg rounded-sm"
-              >
-                <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="text-2xl font-heading text-basalt-dark mb-3">{item.title}</h3>
-                <p className="text-basalt/80 leading-relaxed font-sans">{item.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-
+        
         {/* --- Section 2: Design System & Theme --- */}
         <div>
           <h2 className="text-3xl font-heading text-bhagwa-dark mb-10 text-center">UI/UX Design System</h2>
