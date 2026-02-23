@@ -11,9 +11,9 @@ const Gallery = () => {
     { src: "/kondhaneshwar.png", alt: "Kondhaneshwar" },
     { src: "/image(7).png", alt: "Stone walls of Sinhagad" },
     { src: "/doordarshan_towers.png", alt: "Doordarshan towers" },
-    { src: "/3dmodel.jpeg", alt: "3d model" },
-    { src: "/innovation1.png", alt: "automatic door system" },
-    { src: "/innovartion2.png", alt: "solar powered energy" },
+    { src: "/model.jpeg", alt: "3d model" },
+    { src: "/innovation1.jpeg", alt: "automatic door system" },
+    { src: "/innovartion2.jpeg", alt: "solar powered energy" },
   ];
 
   return (
