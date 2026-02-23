@@ -13,7 +13,7 @@ const Gallery = () => {
     { src: "/doordarshan_towers.png", alt: "Doordarshan towers" },
     { src: "/model.jpeg", alt: "3d model" },
     { src: "/innovation1.jpeg", alt: "automatic door system" },
-    { src: "/innovartion2.jpeg", alt: "solar powered energy" },
+    { src: "/innovation2.jpeg", alt: "solar powered energy" },
   ];
 
   return (
