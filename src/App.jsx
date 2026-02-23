@@ -11,9 +11,9 @@ import FloraFauna from './components/FloraFauna';
 import Gallery from './components/Gallery';
 import VirtualVaidya from './components/VirtualVaidya';
 import AboutProject from './components/AboutProject';
+import PhysicalModel from './components/PhysicalModel'; // <-- New import
 import PageTransition from './components/PageTransition';
 
-// The Homepage sections combined
 const Home = () => (
   <>
     <Hero />
@@ -23,7 +23,6 @@ const Home = () => (
   </>
 );
 
-// We need a sub-component to use the "useLocation" hook
 const AnimatedRoutes = () => {
   const location = useLocation();
 
@@ -32,6 +31,7 @@ const AnimatedRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<PageTransition><Home /></PageTransition>} />
         <Route path="/gallery" element={<PageTransition><Gallery /></PageTransition>} />
+        <Route path="/model" element={<PageTransition><PhysicalModel /></PageTransition>} /> {/* <-- New Route */}
         <Route path="/vaidya" element={<PageTransition><VirtualVaidya /></PageTransition>} />
         <Route path="/about" element={<PageTransition><AboutProject /></PageTransition>} />
       </Routes>

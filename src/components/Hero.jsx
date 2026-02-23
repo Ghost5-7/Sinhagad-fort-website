@@ -10,7 +10,7 @@ const Hero = () => {
       
       {/* Hero Background Image */}
       <img 
-        src="/hero-bg.jpg" // Note: Ensure you have an image named this in your public folder!
+        src="/model.jpeg" // Note: Ensure you have an image named this in your public folder!
         alt="Sinhagad Fort Aerial View" 
         className="absolute inset-0 w-full h-full object-cover z-0 opacity-80"
       />

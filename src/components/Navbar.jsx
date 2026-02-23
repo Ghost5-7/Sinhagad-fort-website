@@ -10,19 +10,13 @@ const Navbar = () => {
           Sinhagad Heritage
         </Link>
 
+        {/* Added the new link here */}
         <div className="flex flex-wrap justify-center gap-4 md:gap-6 font-sans font-medium uppercase text-xs md:text-sm tracking-wider">
-          <Link to="/" className="hover:text-bhagwa transition-colors duration-300">
-            Home
-          </Link>
-          <Link to="/gallery" className="hover:text-bhagwa transition-colors duration-300">
-            Gallery
-          </Link>
-          <Link to="/vaidya" className="hover:text-bhagwa text-regal transition-colors duration-300">
-            Virtual Vaidya
-          </Link>
-          <Link to="/about" className="hover:text-bhagwa transition-colors duration-300">
-            Project Specs
-          </Link>
+          <Link to="/" className="hover:text-bhagwa transition-colors duration-300">Home</Link>
+          <Link to="/gallery" className="hover:text-bhagwa transition-colors duration-300">Gallery</Link>
+          <Link to="/model" className="hover:text-bhagwa transition-colors duration-300">3D Model</Link>
+          <Link to="/vaidya" className="hover:text-bhagwa text-regal transition-colors duration-300">Virtual Vaidya</Link>
+          <Link to="/about" className="hover:text-bhagwa transition-colors duration-300">Specs</Link>
         </div>
 
       </div>
